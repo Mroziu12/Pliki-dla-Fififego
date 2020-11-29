@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_color"
+    tools:context=".FragMain">
+
+    <TextView
+        android:id="@+id/tv_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Widzisz dzika?"
+        android:textColor="@color/text_color_basic"
+        android:textSize="30dp"
+        android:layout_gravity="center_horizontal" />
+
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:layout_height="200dp"
+        android:layout_marginStart="40dp"
+        android:layout_width="150dp"
+        android:src="@drawable/arrow"
+        />
+
+    <TextView
+        android:background="@drawable/et_custom"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/tv_main_2"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Podstawowe zasady bezpieczństwa"
+        android:textAlignment="center"
+        android:textColor="@color/text_color_basic"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/main_but_report"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_main"
+        app:layout_constraintVertical_bias="0.43" />
+
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:layout_height="200dp"
+        android:layout_width="150dp"
+        android:src="@drawable/arrow2"
+        android:layout_marginEnd="80dp"
+        />
+
+    <Button
+        android:id="@+id/main_but_report"
+        android:layout_width="125dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="144dp"
+        android:background="@drawable/but_basic_bg"
+        android:text="@string/but_zglos"
+        android:layout_gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</LinearLayout>
